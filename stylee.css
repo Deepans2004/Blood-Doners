@@ -675,23 +675,3 @@ cursor: pointer;
 }
 
 /* Footer Section Css Ends*/
-
-/* For devices less than 480px */
-@media screen and (max-width: 479px) {
-  /* Add your CSS rules for small devices here */
-}
-
-/* For devices between 480px and 767px */
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  /* Add your CSS rules for medium devices here */
-}
-
-/* For devices between 768px and 991px */
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  /* Add your CSS rules for large devices here */
-}
-
-/* For devices greater than 992px */
-@media screen and (min-width: 992px) {
-  /* Add your CSS rules for extra large devices here */
-}
