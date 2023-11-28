@@ -1,0 +1,289 @@
+/*font family*/
+/* basic styling suru*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root{
+  --themered: #e43a47;
+  --gray: #efefef;
+}
+
+html{
+  scroll-behavior: smooth;
+  background-color: #e2e2e2;
+}
+
+button, 
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins', sans-serif;
+
+}
+ p{
+  font-size: 14px;
+  line-height: 26px;
+ }
+
+.fullcontainer {
+  width: 100%;
+
+}
+
+
+.container {
+  width: 1140;
+  margin: auto;
+}
+
+
+header{
+  width: 100%;
+  background-color: rgba(0, 0 , 0 , 0.6);
+  position: fixed;
+  z-index: 2;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container .logo{
+  padding: 15px;
+  height: 50px;
+  width: 100px;
+
+}
+
+header .container .logo img{
+  height: 100%;
+
+}
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block; 
+}
+
+header nav ul li a{
+  display: inline-block;
+  height: 75px;
+  line-height: 75px;
+  padding: 0 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+header nav ul a:hover{
+  background-color: var(--themered);
+
+}
+
+.needy{
+  margin-top: 230px;
+  margin-left: 90px;
+  display: inline-block;
+  font-size: 3.5rem;
+  background: none;
+  color: rgb(0, 0, 0);
+  text-shadow: 0 0 2px  #000;
+  width: 50%;
+  line-height: 4.2rem;
+  font-weight: 100;
+}
+
+.needy h2{
+  background:
+  display: inline-block;
+  line-height: 3.5rem;
+  padding: 0 1px;
+  margin-top: 13px;
+  font-weight: 600;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-top: 19px;
+}
+
+.needy span{
+  color: #000;
+}
+
+.needy p{
+  font-size: large;
+  font-style: bold;
+  margin-top: 24px;
+}
+
+.needy p a{
+  color: #000;
+}
+
+.fill {         
+  margin-top: 250px;
+  margin-left: 50px;
+  width: 1425px;
+  background: rgba(0, 0, 0, 0.892);
+  /*box-shadow: 2px 2px 2px rgb(0, 0, 0), 1px 2px ;*/
+  color: #fff; 
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+
+.fill:hover{
+  transition: 1.9s ease-in;
+  transition: 0.6s ease-out;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.768) ,rgba(230, 31, 31, 0.768)) ;
+  box-shadow: 2px 2px 2px rgb(255, 0, 0), 1px 2px ;
+}
+
+
+
+.fill h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.fill h4 {
+  text-align: center;
+}
+.fill .input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255 , 255 , 0.2);
+  border-radius: 40px;
+  font-size: 15px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+
+}
+
+.input-box input::placeholder {
+  color: white;
+}
+
+.input-box i{
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+}
+
+.fill .remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin: -15px 0 15px;
+}
+
+.remember-forget label input {
+  accent-color: #fff;
+  margin-right: 3px; 
+}
+
+.remember-forget a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+
+
+.fill .btn{
+  margin-left: 650px;
+  width: 10%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0 , 0, 0, .1);
+  cursor: pointer;
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.fill .register-link {
+  font-size: 14.5px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.register-link p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.register-link p a:hover {
+  text-decoration: underline;
+
+}
+
+select {
+  background-color: white;
+  border: thin solid grey;
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.Charge {
+  margin-left: 450px;
+  margin-top: -60px;
+  margin-bottom: 40px;
+ 
+}
+
+.Services {
+  margin-left: 900px;
+  margin-top: -80px;
+  margin-bottom: 40px;
+
+}
+select.arrows {
+  background-image:    url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAA3klEQVRIS+3VMU9CMRTF8d8zBL+aizoQFhx0kUk33RzdYMNFXUFnYeGrYYyaJiUxJHDLSxodbNKpfeffc9/pbaPyaCrr+3OA++z4rtT5Pg5GuMnCY9yWQEoBE1xhlUUP8YDrCBIB0vojLvGO0yz4hm4JJAKcYYoPHGOZAUdYoIMBXrc5iQAHeMlzviFygj7O8dkWEJU4XI8chALRhn9AVKHf70VRTHu4wFfbmKZLNKt50dLBnna0imcMd/2I0phWa3Y/D1e1Xa9BCZJG0VuQNpaWKMx72xS1Fl5/WN3BN+AgJhnZQlq4AAAAAElFTkSuQmCC');
+  background-position: calc(100% - .5rem), 100% 0;
+  background-size:  1.5em 1.5em;
+  background-repeat: no-repeat;
+}
+
+select.arrows:focus {
+  border-color: rgb(0, 0, 0);
+  outline: 0;
+}

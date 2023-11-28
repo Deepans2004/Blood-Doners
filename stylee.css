@@ -1,0 +1,697 @@
+/*font family*/
+/* basic styling suru*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@media screen and (max-width: 1410px) {
+  
+}
+
+:root{
+  --themered: #e43a47;
+  --gray: #efefef;
+}
+
+html{
+  scroll-behavior: smooth;
+  
+}
+
+button, 
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ p{
+  font-size: 14px;
+  line-height: 26px;
+
+ }
+
+.fullcontainer {
+  width: 100%;
+
+
+}
+
+.container {
+  width: device-width;
+  margin: auto;
+}
+
+ 
+
+
+/*basix styling end*/
+
+/*home ki styling*/
+
+header{
+  width: 100%;
+  background-color: rgba(0, 0 , 0 , 0.6);
+  position: fixed;
+  z-index: 2;
+  height: 75px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container .logo{
+  padding: 15px 0;
+  height: 75px;
+}
+
+header .container .logo img{
+  height: 100%;
+
+}
+header nav ul{
+  list-style-type: none;
+}
+
+header nav ul li{
+  display: inline-block; 
+}
+
+header nav ul li a{
+  display: inline-block;
+  height: 75px;
+  line-height: 75px;
+  padding: 0 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+header nav ul a:hover{
+  background-color: var(--themered);
+
+}
+
+.banner{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("slide-02.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+
+.banner h1{
+  margin-top: 230px;
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 2px  #000;
+  width: 50%;
+  line-height: 4.2rem;
+  font-weight: 100;
+  margin-left: 150px;
+}
+
+.banner h1 span{
+  background-color: var(--themered);
+  display: inline-block;
+  line-height: 3.5rem;
+  padding: 0 15px;
+  font-weight: 600;
+  border-radius: 5px;
+
+}
+
+
+.banner p{
+  color: #fff;
+  width: 50%;
+  text-shadow: 0 0 6px #000;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+.banner .button-link {
+  text-decoration: none;
+}
+
+.banner .button-link button {
+  outline: none; 
+}
+
+.banner button{
+  background-color: var(--themered);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.838), 0px 3px ;
+  border: 0;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s;
+  margin-left: 150px;
+}
+
+.banner button:hover{
+  box-shadow: 4px 4px 4px rgba(255, 0, 0, 0.838), 2px 3px ;
+  transition: 0.3s;
+}
+
+/*home ki styling end*/
+
+/*about us ki styling*/
+
+.sectiontitle{
+  width: 300px;
+  border-bottom: 3px solid var(--themered);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 200;
+  margin: 0 auto 50px;
+  position: relative;
+  padding: 10px 0;
+  text-transform: uppercase;
+}
+
+.sectiontitle::after {
+  display: inline-block;
+  content: "";
+  height: 15px;
+  width: 15px;
+  background-color: var(--themered);
+  position: absolute;
+  left: calc(50% - 10px);
+  top: calc(75% - 7px);
+  transform: rotate(45deg) translate(50%, 50%);
+  border: 3px solid#fff;
+}
+
+section{
+  padding: 100px 0;
+  position: relative;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+
+}
+
+section .p{
+  font-size: 25px;
+}
+
+#aboutsection .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+  position: relative; 
+  height: 245px;
+}
+
+#aboutsection .cards > div{
+  width: 350px;
+  background-color: #000;
+  padding: 35px;
+  color: #000000; 
+  text-align: center;
+  border-radius: 8px;
+  height: 215px;
+  border: 1px solid #ccc;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.325) ,rgba(230, 31, 31, 0.325)) ;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0), 4px 5px ;
+}
+
+#aboutsection .cards > div:hover{
+  width: 400px;
+  margin-top: -20px;
+  border-color: var(--themered);
+  padding: 55px;
+  height: auto;
+  transition: 0.4s;
+  background: var(--gray);
+  box-shadow: 5px 5px 5px rgb(124, 124, 124), 4px 5px ;
+  background: linear-gradient(to right, rgba(230, 31, 31, 0.325) ,rgba(0, 0, 0, 0.325)) ;
+
+
+}
+
+#aboutsection .cards > div .title{
+  font-size: 18px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#aboutsection .cards > div .p{
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+#aboutsection .cards > div button{
+  border: 1px solid var(--themered);
+  outline: none;
+  padding: 7px 15px;
+  margin-top: 15px;
+  font-size: 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#aboutsection .cards > div:hover button{
+  background-color: var(--themered);
+  color: #fff;
+}
+
+
+
+.container2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.text1-section {
+  flex: 1;
+  padding: 60px;
+  font-size: large;
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+
+.photo-section {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+  margin-bottom: -10px;
+}
+
+.photo-section img {
+  width: 100%;
+  max-width: 450px; /* Adjust this width as needed */
+  margin: 10px;
+  margin-left: 80px;
+  box-shadow: 2px 2px 2px rgba(33, 31, 31, 0.838), 1px 2px ;
+  height: 300px;
+  margin-top: 65px;
+}
+
+.photo-section .join:hover {
+  background-color: black;
+}
+
+.photo-section img:hover{
+  transform: scale(1.09);
+  transition: 0.5s ease-in;
+  transition: 0.5s ease-out;
+  transition: 0.5s ease-in-out;
+  z-index: 1;
+  box-shadow: 4px 4px 4px var(--themered), 2px 3px ;
+  overflow: hidden;
+}
+
+
+.container3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.text-section {
+  flex: 1;
+  padding: 30px;
+  font-size: large;
+  margin-bottom: 3px;
+  margin-top: 20px;
+}
+
+.photo1-section {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+
+
+.photo1-section img {
+  width: 100%;
+  max-width: 450px; /* Adjust this width as needed */
+  margin: 10px;
+  margin-left: 80px;
+  box-shadow: 2px 2px 2px rgba(33, 31, 31, 0.838), 1px 2px ;
+  height: 300px;
+  margin-top: 65px;
+}
+
+.photo1-section .join:hover {
+  background-color: black;
+}
+
+.photo1-section img:hover{
+  transform: scale(1.09);
+  transition: 0.5s ease-in;
+  transition: 0.5s ease-out;
+  transition: 0.5s ease-in-out;
+  z-index: 1;
+  box-shadow: 4px 4px 4px var(--themered), 2px 3px ;
+  overflow: hidden;
+}
+
+
+/* About section css khtm */
+
+/*programs section css*/
+
+.programs{
+  background-color: #e2e2e2;
+
+}
+
+.programs .boxContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 50px;
+}
+
+
+.programs  .boxContainer .box {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 25px;
+  border-radius: 5px;
+  box-shadow: 0 0 3px 0 #c5c5c5;
+  position: relative;
+  margin-bottom: 15px;
+  margin-left: 13px;
+  margin-right: 13px;
+}
+
+.programs .boxContainer .box .cardImage {
+
+  height: 300px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImage::after {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
+
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage::after {
+  background-image: url("4.jpg");
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage::after {
+  background-image: url("3.jpg");
+}
+
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage::after {
+  background-image: url("2.jpg");
+}
+
+
+.programs .boxContainer .box:nth-child(4) .cardImage,
+.programs .boxContainer .box:nth-child(4) .cardImage::after {
+  background-image: url("1.jpg");
+}
+
+
+.programs .boxContainer .box:hover .cardImage::after {
+  top: 100%;
+}
+
+.programs .boxContainer .box .programTitle {
+   font-size: 16px;
+   margin-top: 15px;
+   font-weight: 600;
+   color: #444;
+}
+
+.programs .boxContainer .box .donationCount {
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+  margin-top: 10px;
+}
+
+.programs .boxContainer .box .donationCount span {
+  color: var(--themered);
+}
+
+.programs .boxContainer .box button {
+  position: absolute;
+  left: 50%;
+  background-color: var(--themered);
+  color: #fff;
+  transform: translate(-50%);
+  bottom: -15px;
+  border-radius: 60px;
+  padding: 7px 15px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+/*Gallery Section css started*/
+
+.gallery .galleryContainer {
+  column-count: 4;
+  column-gap: 40px;
+
+}
+
+.gallery.galleryContainer .item {
+  position: relative;
+  margin-bottom: 30px;
+  margin-top: 60px;
+  overflow: hidden;
+
+}
+
+.gallery .galleryContainer img{
+  width: 100%;
+  display: block;
+}
+
+.gallery .galleryContainer .title {
+  position: absolute;
+  background-color: var(--gray);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: bold;
+  opacity: 0;
+  z-index: 1;
+}
+
+.gallery .galleryContainer .item:hover .title {
+  opacity: 1;
+}
+
+.gallery .galleryContainer .item:hover img{
+  transform: scale(1.2);
+  border-radius: 7px;
+  transition: 0.3s ease-in;
+  transition: 0.2s ease-out;
+}
+
+
+/*Gallery Section css Ended*/
+
+/* Footer section css start*/
+footer{
+  width: 100%;
+  position: 0;
+  bottom: 0;
+  background: linear-gradient(to right, #e43a47,rgb(96, 96, 96) );
+  color: #fff;
+  padding: 100px 0 30px;
+  border-top-left-radius: 125px;
+  font-size: 13px;
+
+  line-height: 20px;
+}
+
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+
+}
+
+.col:nth-child(2) , .col:nth-child(3) {
+  flex-basis: 15%;
+}
+
+
+.logo{
+  width: 200px;
+  margin-bottom: 30px;
+}
+
+.col h3{
+  width: fit-content;
+  margin-bottom: 40px;
+  position: relative;
+
+}
+
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+.email-id:hover{
+  cursor: pointer;
+  color: #000;
+
+}
+
+ul li{
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li a:hover{
+  color: #000;
+}
+
+form{
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+form .fa-regular{
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+form .fa-regular:hover{
+  cursor: pointer;
+  color: #000;
+}
+
+form input{
+  width: 100%;
+  background: transparent;
+  color: #000000;
+  border: 0;
+  outline: none;
+  
+}
+
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+form button .fa-solid{
+  font-size: 16px;
+  color: #fff;
+}
+
+form button .fa-solid:hover{
+  transform: scale(1.1);
+  color: #000;
+}
+
+
+.social-icon .fa-brands{
+
+width: 40px;
+height: 40px;
+border-radius: 50%;
+text-align: center;
+line-height: 40px;
+font-size: 20px;
+color: #000;
+background: #fff;
+margin-right: 15px;
+cursor: pointer;
+}
+
+.social-icon .fa-brands:hover{
+  transform: scale(1.1);
+  color: #fff;
+  background: #000;
+
+
+}
+
+.ender{
+  text-align: right;
+  margin-top: 40px;
+  color: #fff;
+  margin-left: 80px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.838), 0px 1px ;
+}
+
+/* Footer Section Css Ends*/
+
+/* For devices less than 480px */
+@media screen and (max-width: 479px) {
+  /* Add your CSS rules for small devices here */
+}
+
+/* For devices between 480px and 767px */
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  /* Add your CSS rules for medium devices here */
+}
+
+/* For devices between 768px and 991px */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  /* Add your CSS rules for large devices here */
+}
+
+/* For devices greater than 992px */
+@media screen and (min-width: 992px) {
+  /* Add your CSS rules for extra large devices here */
+}

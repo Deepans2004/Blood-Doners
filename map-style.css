@@ -1,0 +1,158 @@
+/*font family*/
+/* basic styling suru*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@media screen and (max-width: 1410px) {
+  
+}
+
+:root{
+  --themered: #e43a47;
+  --gray: #aeaaaa84;
+}
+
+html{
+  scroll-behavior: smooth;
+  background: #59575776;
+}
+
+button, 
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ p{
+  font-size: 14px;
+  line-height: 26px;
+
+ }
+
+.fullcontainer {
+  width: 100%;
+
+
+}
+
+.container {
+  width: device-width;
+  margin: auto;
+}
+
+
+
+.banner{
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("slide-02.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+
+.banner h1{
+  margin-top: 230px;
+  display: inline-block;
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 0 0 2px  #000;
+  width: 50%;
+  line-height: 4.2rem;
+  font-weight: 100;
+  margin-left: 150px;
+}
+
+.banner h1 span{
+  background-color: var(--themered);
+  display: inline-block;
+  line-height: 3.5rem;
+  padding: 0 15px;
+  font-weight: 600;
+  border-radius: 5px;
+
+}
+
+
+.banner p{
+  color: #fff;
+  width: 50%;
+  text-shadow: 0 0 6px #000;
+  margin-top: 10px;
+  margin-left: 150px;
+}
+
+.loader {
+  margin-left: 700px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  border: 16px solid #717171;
+  border-radius: 50%;
+  border-top: 16px solid #e92929;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.cup {
+  margin-left: 450px;
+  margin-top: 100px;
+  font-size: 80px;
+  color: #e43a47;
+}
+
+.hup{
+  margin-left: 600px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.Doner{
+  text-align: center;
+}
+
+table {
+  margin-left: 150px;
+  margin-bottom: 30px;
+  border: #000;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+}
+
+td, th {
+  border: 1px solid #000000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.map1{
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+iframe{
+  width: 80%;
+  height: 500px;
+  border-radius: 16px;
+
+}
