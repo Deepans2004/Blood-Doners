@@ -226,8 +226,8 @@ section .p{
   border-radius: 8px;
   height: 215px;
   border: 1px solid #ccc;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.325) ,rgba(230, 31, 31, 0.325)) ;
-  box-shadow: 5px 5px 5px rgb(0, 0, 0), 4px 5px ;
+  background: linear-gradient(to right, rgba(176, 176, 176, 0.232) ,rgba(0, 0, 0, 0.232)) ;
+  box-shadow: 5px 5px 5px rgb(0, 0, 0),5px 12px 5px ;
 }
 
 #aboutsection .cards > div:hover{
@@ -239,7 +239,7 @@ section .p{
   transition: 0.4s;
   background: var(--gray);
   box-shadow: 5px 5px 5px rgb(124, 124, 124), 4px 5px ;
-  background: linear-gradient(to right, rgba(230, 31, 31, 0.325) ,rgba(0, 0, 0, 0.325)) ;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.325) ,rgba(230, 31, 31, 0.325)) ;
 
 
 }
