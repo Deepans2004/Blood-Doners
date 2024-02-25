@@ -665,5 +665,18 @@ cursor: pointer;
 
 
 }
+  #credit {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  #credit a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+
 
 /* Footer Section Css Ends*/
